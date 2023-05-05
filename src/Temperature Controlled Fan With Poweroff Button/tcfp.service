@@ -1,0 +1,11 @@
+[Unit]
+Description=Temperature Controlled Fan With Poweroff Button
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/services/tcfp/main.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
