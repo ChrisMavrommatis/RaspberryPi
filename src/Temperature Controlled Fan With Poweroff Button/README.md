@@ -8,7 +8,11 @@ Final Path should be /lib/systemd/system/tcfp.service
 
 
 sudo chmod 644 /lib/systemd/system/tcfp.service
+
 chmod +x /home/pi/services/tcfp/main.py
+
 sudo systemctl daemon-reload
+
 sudo systemctl enable tcfp.service
+
 sudo systemctl start tcfp.service
